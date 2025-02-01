@@ -1,7 +1,7 @@
 export default async function HomePage() {
   return (
     <div>
-      <p>Billsky Otakudesu Backend API</p>
+      <p>Billsky Otakudesu Backend API Fetching</p>
       <br />
       <code>
         <h1><strong>Routes</strong></h1>
@@ -13,6 +13,7 @@ export default async function HomePage() {
           <li>/api/complete-anime/*pages ex: 1,2,3,dst...*</li>
           <li>/api/genre</li>
           <li>/api/genre/*slug?page=... ex:fantasy?page=1*</li>
+          <li>/api/search/</li>
         </ul>
       </code>
     </div>
