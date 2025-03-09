@@ -105,16 +105,15 @@ type anime = {
     }
   }
   
-  type batch = {
-    batch: string | undefined
-    download_urls: {
-      resolution: string | undefined
-      file_size: string | undefined
-      urls: {
-        provider: string | undefined
-        url: string | undefined
-      }[]
-    }[]
+  type urlType = {
+    provider: string,
+    url: string | undefined
+  };
+
+  type batchType = {
+    resolution: string,
+    size: string,
+    urls: urlType[]
   }
   
   interface ScheduleByDay {
@@ -126,5 +125,5 @@ type anime = {
     }[];
   }
   
-  export type { anime, searchResultAnime, ongoingAnime, completeAnime, genre, episode_list, episode, batch, ScheduleByDay }
+  export type { anime, searchResultAnime, ongoingAnime, completeAnime, genre, episode_list, episode, batchType, urlType, ScheduleByDay }
   
